@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profil Mahasiswa Mewah</title>
+    <style>
+      /* General Styling */
+      body {
+        font-family: "Poppins", sans-serif;
+        margin: 0;
+        padding: 0;
+        background: linear-gradient(135deg, #141e30, #243b55);
+        color: #ffffff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+      }
+
+      .profile-container {
+        max-width: 800px;
+        background: #1c1f2b;
+        border-radius: 20px;
+        overflow: hidden;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+        position: relative;
+        transition: transform 0.3s, box-shadow 0.3s;
+      }
+
+      .profile-container:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 15px 40px rgba(0, 0, 0, 0.8);
+      }
+
+      .profile-header {
+        background: linear-gradient(135deg, #00c6ff, #0072ff);
+        padding: 2em 1em 1em;
+        text-align: center;
+        position: relative;
+      }
+
+      .profile-header h1 {
+        font-size: 2.5rem;
+        font-weight: 700;
+        margin-bottom: 0.3em;
+      }
+
+      .profile-header p {
+        font-size: 1.2rem;
+        font-weight: 300;
+      }
+
+      .profile-photo {
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        overflow: hidden;
+        border: 5px solid #ffffff;
+        box-shadow: 0 5px 15px rgba(255, 255, 255, 0.2);
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        background: #ffffff;
+      }
+
+      .profile-photo img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .profile-content {
+        padding: 3em 2em 2em;
+        text-align: center;
+      }
+
+      .profile-content p {
+        font-size: 1.1rem;
+        line-height: 1.8;
+        color: #c1c6ce;
+      }
+
+      .social-links {
+        margin-top: 2em;
+        display: flex;
+        justify-content: center;
+        gap: 1.5em;
+      }
+
+      .social-links a {
+        color: #ffffff;
+        font-size: 1.5rem;
+        text-decoration: none;
+        transition: transform 0.3s, color 0.3s;
+      }
+
+      .social-links a:hover {
+        transform: scale(1.2);
+        color: #00c6ff;
+      }
+
+      .profile-footer {
+        text-align: center;
+        background: #141e30;
+        padding: 1em;
+        color: #808b96;
+        font-size: 0.9em;
+      }
+
+      @media (max-width: 768px) {
+        .profile-container {
+          margin: 20px;
+        }
+
+        .profile-header h1 {
+          font-size: 2rem;
+        }
+
+        .profile-header p {
+          font-size: 1rem;
+        }
+
+        .profile-photo {
+          width: 100px;
+          height: 100px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="profile-container">
+      <!-- Header -->
+      <div class="profile-header">
+        <!-- Foto Profil -->
+        <div class="profile-photo">
+          <img src="5.jpeg" alt="Foto Profil" />
+        </div>
+        <h1>Wahlul M.Nur</h1>
+        <p>Mahasiswa Teknik Informatika</p>
+      </div>
+
+      <!-- Konten -->
+      <div class="profile-content">
+        <p>
+          Halo! Saya adalah seorang mahasiswa Teknik Informatika yang
+          bersemangat mempelajari dunia teknologi dan inovasi. Minat utama saya
+          adalah dalam bidang pengembangan perangkat lunak, kecerdasan buatan,
+          dan desain pengalaman pengguna. Saya percaya teknologi dapat mengubah
+          dunia menjadi tempat yang lebih baik.
+        </p>
+        <p>
+          Selain kegiatan akademik, saya juga terlibat dalam organisasi kampus
+          yang berfokus pada pengembangan teknologi dan inovasi. Saya sering
+          mengikuti pelatihan, seminar, dan hackathon untuk mengasah
+          keterampilan sekaligus memperluas jaringan profesional di bidang ini.
+        </p>
+        <p>
+          Di waktu luang, saya aktif mengikuti kompetisi IT, menulis blog
+          tentang teknologi, dan terlibat dalam organisasi kampus. Saya
+          berkomitmen untuk terus belajar dan berkembang untuk memberikan
+          kontribusi terbaik di masa depan.
+        </p>
+        <p>
+          Dengan kombinasi teori dan praktik, saya terus berupaya untuk
+          memberikan solusi kreatif terhadap tantangan di dunia teknologi.
+        </p>
+      </div>
+
+      <!-- Footer -->
+      <div class="profile-footer">
+        <p>
+          &copy; 2025 Profil Mahasiswa. Dibuat dengan sepenuh hati oleh Wahlul
+          M.Nur.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

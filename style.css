@@ -1,0 +1,193 @@
+d<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modern Profile Layout</title>
+  <style>
+    /* General Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: linear-gradient(to right, #eef2f3, #8e9eab);
+      font-family: "Poppins", sans-serif;
+      color: #333;
+    }
+
+    .container {
+      display: grid;
+      grid-template-areas:
+        "sidebar"
+        "content"
+        "footer";
+      grid-template-columns: 1fr;
+      grid-template-rows: 150px auto 120px;
+      height: 100vh;
+    }
+
+    @media (min-width: 1040px) {
+      .container {
+        grid-template-areas:
+          "sidebar content"
+          "sidebar footer";
+        grid-template-columns: 300px 1fr;
+        grid-template-rows: auto 120px;
+      }
+    }
+
+    /* Sidebar */
+    .sidebar {
+      grid-area: sidebar;
+      background: linear-gradient(135deg, #6d83f1, #33d2b4);
+      color: white;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 1.5em 0;
+    }
+
+    .sidebar nav ul {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 1.5em;
+      text-align: center;
+    }
+
+    .sidebar nav ul li a {
+      text-decoration: none;
+      color: white;
+      font-size: 1.2em;
+      font-weight: 600;
+      padding: 0.75em 1em;
+      border-radius: 10px;
+      transition: background 0.3s, transform 0.2s;
+    }
+
+    .sidebar nav ul li a:hover {
+      background-color: rgba(255, 255, 255, 0.2);
+      transform: scale(1.05);
+    }
+
+    /* Content */
+    .content {
+      grid-area: content;
+      padding: 2em;
+      position: relative;
+    }
+
+    .content .hero {
+      max-width: 800px;
+      margin: 0 auto;
+      text-align: left;
+      position: relative;
+    }
+
+    .content .hero h1 {
+      font-size: 3rem;
+      font-weight: bold;
+      color: #333;
+      margin-bottom: 0.5em;
+    }
+
+    .content .hero p {
+      font-size: 1.1rem;
+      color: #444;
+      line-height: 1.8;
+      margin-bottom: 1.5em;
+    }
+
+    .content .hero .action-btn {
+      display: inline-block;
+      background: #ff8c42;
+      color: white;
+      font-weight: bold;
+      padding: 0.8em 1.5em;
+      border-radius: 25px;
+      text-decoration: none;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .content .hero .action-btn:hover {
+      transform: scale(1.1);
+      box-shadow: 0px 10px 20px rgba(255, 140, 66, 0.4);
+    }
+
+    @media (max-width: 1040px) {
+      .content .hero img {
+        position: static;
+        margin: 1em 0;
+        display: block;
+      }
+    }
+
+    /* Footer */
+    .footer {
+      grid-area: footer;
+      background: #33d2b4;
+      color: white;
+      text-align: center;
+      padding: 1.5em 0;
+    }
+
+    .footer ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 1.5em;
+    }
+
+    .footer ul li a {
+      text-decoration: none;
+      color: white;
+      font-size: 1.1em;
+      transition: color 0.3s;
+    }
+
+    .footer ul li a:hover {
+      color: #ff8c42;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Portfolio</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <!-- Content -->
+    <div class="content">
+      <div class="hero">
+        <h1>Selamat Datang</h1>
+        <p>
+          Saya adalah mahasiswa Teknik Informatika dengan fokus pada pengembangan perangkat lunak dan desain modern. 
+          Teknologi adalah cara saya menciptakan dampak positif untuk dunia. Mari berbagi ide dan berkolaborasi bersama!
+        </p>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+      <ul>
+        <li><a href="#">Privacy</a></li>
+        <li><a href="#">Terms</a></li>
+        <li><a href="#">Support</a></li>
+      </ul>
+      <p>&copy; 2025 Teknik Informatika. All Rights Reserved.</p>
+    </div>
+  </div>
+</body>
+</html>

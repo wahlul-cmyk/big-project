@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portofolio Saya</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f0f4f8;
+      }
+      header {
+        background-color: #0077b6;
+        color: white;
+        padding: 20px;
+        text-align: center;
+      }
+      header h1 {
+        margin: 0;
+      }
+      nav {
+        display: flex;
+        justify-content: center;
+        background-color: #005f73;
+        padding: 10px;
+      }
+      nav a {
+        text-decoration: none;
+        color: white;
+        padding: 10px 20px;
+        font-weight: bold;
+        transition: background-color 0.3s;
+      }
+      nav a:hover {
+        background-color: #008cba;
+      }
+      .container {
+        max-width: 1000px;
+        margin: 30px auto;
+        padding: 0 15px;
+      }
+      section {
+        margin-bottom: 50px;
+      }
+      h2 {
+        color: #0077b6;
+        font-size: 2rem;
+      }
+      .about,
+      .projects {
+        background-color: #ffffff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      }
+      .about p {
+        font-size: 1.1rem;
+        line-height: 1.6;
+      }
+      .projects {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+      }
+      .project-card {
+        background-color: #e0f7fa;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        text-align: center;
+      }
+      .project-card img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 8px;
+      }
+      .project-card h3 {
+        margin: 10px 0;
+        color: #0077b6;
+      }
+      footer {
+        background-color: #005f73;
+        color: white;
+        text-align: center;
+        padding: 20px;
+        position: fixed;
+        width: 100%;
+        bottom: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Portofolio Saya</h1>
+      <p>
+        Selamat datang di portofolio saya! Temukan lebih banyak tentang diri
+        saya dan proyek-proyek yang telah saya kerjakan.
+      </p>
+    </header>
+
+    <nav>
+      <a href="#about">Tentang Saya</a>
+      <a href="#projects">Proyek</a>
+    </nav>
+
+    <div class="container">
+      <!-- About Section -->
+      <section id="about" class="about">
+        <h2>Tentang Saya</h2>
+        <p>
+          Nama saya Wahlul M.Nur, seorang mahasiswa salah satu perguruan tinggi
+          universitas islam makassar dengan passion di dunia teknologi dan
+          coding. Saya berfokus pada pengembangan web dan aplikasi dengan
+          pengalaman dalam berbagai teknologi seperti HTML, CSS, JavaScript, dan
+          framework modern seperti React dan Node.js.
+        </p>
+      </section>
+
+      <!-- Projects Section -->
+      <section id="projects" class="projects">
+        <h2>Proyek</h2>
+        <div class="project-card">
+          <img src="Picture2.png" alt="Project 1" />
+          <h2>project 1</h2>
+          <h3>project Aplikasi Temu Jani Pimpinan Berbasis WEB</h3>
+          <p>
+            Aplikasi Temu Janji berbasis web adalah platform yang dirancang
+            untuk memudahkan pengguna dalam mengatur dan mengelola jadwal
+            pertemuan atau janji temu.
+          </p>
+          <a
+            href="#"
+            style="color: #0077b6; text-decoration: none; font-weight: bold"
+            >Lihat Proyek</a
+          >
+        </div>
+        <div class="project-card">
+          <img src="Picture3.png" alt="Project 2" />
+          <h2>project 2</h2>
+          <h3>project Aplikasi Persuratan Berbasis WEB</h3>
+          <p>
+            Aplikasi Persuratan berbasis web adalah platform yang memudahkan
+            pengguna dalam mengelola, membuat, dan mengirim surat secara
+            digital. Aplikasi ini menyediakan fitur untuk membuat surat resmi,
+            mengelola arsip surat masuk dan keluar, serta memantau status
+            pengiriman surat.
+          </p>
+          <a
+            href="#"
+            style="color: #0077b6; text-decoration: none; font-weight: bold"
+            >Lihat Proyek</a
+          >
+        </div>
+      </section>
+    </div>
+
+    <footer>
+      <p>&copy; 2025 Wahlul M.Nur. Semua hak cipta dilindungi.</p>
+    </footer>
+  </body>
+</html>
